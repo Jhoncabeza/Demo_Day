@@ -1,6 +1,6 @@
 import { SiFacebook, SiGmail } from "react-icons/si";
 
-const SignIn = () => {
+const SignUpForm = () => {
     return (
         <div className=" h-screen flex flex-col items-center justify-center">
             <div className="md:flex md:justify-center">
@@ -16,7 +16,7 @@ const SignIn = () => {
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Email" />
                 </div> 
                 <div className="mb-4">
-                    <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
+                    <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Contraseña" />
                 </div>
                 <div className="md:flex md:justify-center mb-6">
                     <button className="bg-gradient-to-r from-purple-500 to-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
@@ -38,4 +38,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn
+export default SignUpForm

@@ -6,7 +6,8 @@ import Home     from '../containers/Home';
 import Main     from '../containers/Main';
 import Profile  from '../containers/Profile';
 import Schedule from '../containers/Schedule';
-import SignIn   from '../containers/SignIn';
+import SignUp   from '../containers/SignUp';
+import LogIn   from '../containers/LogIn';
 import Tools    from '../containers/Tools';
 import NotFound from '../containers/NotFound';
 
@@ -16,11 +17,11 @@ const AppRouter = () => {
             <Router>
                 <Routes>
                     <Route path="/"     element={<Main />}/>
-                    <Route path="/SignIn"   element={<SignIn />}/>
+                    <Route path="/SignUp"   element={<SignUp />}/>
+                    <Route path="/LogIn"   element={<LogIn />}/>
                     <Route path="/Home"     element={<Home />} />
                     <Route path="/Profile"  element={<Profile />} />
                     <Route path="/Tools"    element={<Tools />} />
-                    {/* <Route path="/Tools/:id" element={< />} /> */}
                     <Route path="/Blog"     element={<Blog />} />
                     <Route path="/Schedule" element={<Schedule />} />
                     <Route path="/AboutUs"  element={<AboutUs />} />
