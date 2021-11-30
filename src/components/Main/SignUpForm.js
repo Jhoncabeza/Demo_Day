@@ -19,7 +19,7 @@ const SignUpForm = () => {
                     <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Contraseña" />
                 </div>
                 <div className="md:flex md:justify-center mb-6">
-                    <button className="bg-gradient-to-r from-purple-500 to-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    <button className="bg-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                         Regístrate
                     </button>
                 </div>

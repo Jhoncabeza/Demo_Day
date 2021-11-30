@@ -9,13 +9,13 @@ const NavBarMain = () => {
         <div className="text-xl">
           <Link
             to="/SignUp"
-            className="block mt-4 lg:inline-block lg:mt-0 ml-10 text-gray-400 cursor-pointer"
+            className="block mt-4 lg:inline-block lg:mt-0 ml-10 text-gray-600 cursor-pointer"
           >
             Regístrate
           </Link>
           <Link
             to="/AboutUs"
-            className="block mt-4 lg:inline-block lg:mt-0 ml-10 text-gray-400 cursor-pointer"
+            className="block mt-4 lg:inline-block lg:mt-0 ml-10 text-gray-600 cursor-pointer"
           >
             Sobre Nosotros
           </Link>

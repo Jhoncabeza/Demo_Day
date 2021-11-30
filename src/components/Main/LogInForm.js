@@ -12,7 +12,7 @@ const LogInForm = () => {
                     </div>
 
                     <div className="w-auto">
-                        <button className="w-40 bg-gradient-to-r from-purple-500 to-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        <button className="w-40 bg-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                             Iniciar sesión
                         </button>
                     </div>

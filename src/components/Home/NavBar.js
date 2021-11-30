@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
-        <nav className="flex items-center justify-between flex-wrap bg-gradient-to-r from-purple-500 to-sky-300 p-6">
+        <nav className="h-10v flex items-center justify-between flex-wrap bg-gradient-to-r from-purple-500 to-sky-300 p-6">
             <div className="flex items-center flex-shrink-0 text-trueGray-50 mr-6"></div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-xl lg:flex-grow">
@@ -13,11 +13,11 @@ const NavBar = () => {
                     >
                         Herramientas
                     </Link>
-                    <Link to="/Blog"
+                    <Link to="/Blogs"
                         href="#responsive-header"
                         className="block mt-4 lg:inline-block lg:mt-0 ml-10 text-gray-50 cursor-pointer"
                     >
-                        Blog
+                        Blogs
                     </Link>
                     <Link to="/Schedule"
                         href="#responsive-header"
