@@ -2,11 +2,11 @@ import { SiFacebook, SiGmail } from "react-icons/si";
 import { authentication } from "../../firebase/firebase"
 import { signInWithPopup,GoogleAuthProvider } from "firebase/auth";
 import { FacebookAuthProvider } from "firebase/auth";
-import { useNavigate } from "react-router";
+
 
 
 const SignUpForm = () => {
-    let navigate = useNavigate()
+    
 
     const signInWithFacebook = () => {
         const provider = new FacebookAuthProvider();
@@ -78,10 +78,10 @@ const SignUpForm = () => {
             <h1 className="text-center text-gray-300 font-extrabold mb-4">------------------- O -------------------</h1>
 
             <div className="flex flex-row justify-content-between">
-                <button onClick={()=> {signInWithFacebook(); navigate("Home")}} className="flex items-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 mr-4 rounded " type="button">
+                <button onClick={signInWithFacebook} className="flex items-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 mr-4 rounded " type="button">
                     <SiFacebook className="mr-2" />Facebook
                 </button>
-                <button onClick={()=> {signInWithGoogle(); navigate("Home")}} className="flex items-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 rounded" type="button">
+                <button onClick={signInWithGoogle} className="flex items-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 rounded" type="button">
                     <SiGmail className="mr-2" />Gmail
                 </button>
 
