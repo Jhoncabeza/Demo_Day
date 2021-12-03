@@ -1,8 +1,8 @@
 const LogInForm = () => {
     return (
         <div className="w-full">
-            <form className="mt-6">
-                <div className="flex">
+            <form className="mt-6 ">
+                <div className="flex flex-col items-center md:flex-row ">
                     <div className="w-48 mb-4 mr-4">
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Email" />
                     </div>

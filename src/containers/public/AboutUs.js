@@ -1,5 +1,5 @@
 import React from "react";
-import { SiFacebook, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 
 
 const AboutUs = () => {

@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutUs   from '../containers/AboutUs';
-import Blogs     from '../containers/Blogs';
-import Home      from '../containers/Home';
-import Main      from '../containers/Main';
-import Profile   from '../containers/Profile';
-import Schedule  from '../containers/Schedule';
-import SignUp    from '../containers/SignUp';
-import LogIn     from '../containers/LogIn';
-import Tools     from '../containers/Tools';
-import NotFound  from '../containers/NotFound';
+import Blogs    from '../containers/private/Blogs';
+import Home     from '../containers/private/Home';
+import Profile  from '../containers/private/Profile';
+import Schedule from '../containers/private/Schedule';
+import Tools    from '../containers/private/Tools';
+import AboutUs  from '../containers/public/AboutUs';
+import LogIn    from '../containers/public/LogIn';
+import Main     from '../containers/public/Main';
+import SignUp   from '../containers/public/SignUp';
+import NotFound from '../containers/NotFound';
 
 const AppRouter = () => {
     return (
