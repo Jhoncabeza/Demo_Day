@@ -19,7 +19,7 @@ const AppRouter = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user === null) {
-            navigate('/SignUp')
+            navigate('/')
         }else{
             navigate('/Home')
         }

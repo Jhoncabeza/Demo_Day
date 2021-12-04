@@ -14,6 +14,6 @@ const AppProvider = ({ children }) => {
 
     return <AppContext.Provider value={{ user }}>{children}</AppContext.Provider>
 }
-AppContext.AppProvider = AppProvider;
+AppContext.AppProvider  = AppProvider;
 
 export default AppContext;
