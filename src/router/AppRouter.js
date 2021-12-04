@@ -1,34 +1,46 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Blogs    from '../containers/private/Blogs';
-import Home     from '../containers/private/Home';
-import Profile  from '../containers/private/Profile';
-import Schedule from '../containers/private/Schedule';
-import Tools    from '../containers/private/Tools';
-import AboutUs  from '../containers/public/AboutUs';
-import LogIn    from '../containers/public/LogIn';
-import Main     from '../containers/public/Main';
-import SignUp   from '../containers/public/SignUp';
+import React, { useContext, useEffect } from 'react';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import AboutUs from '../containers/AboutUs';
+import Blogs from '../containers/Blogs';
+import Home from '../containers/Home';
+import LogIn from '../containers/LogIn';
+import Main from '../containers/Main';
+import Profile from '../containers/Profile';
+import Schedule from '../containers/Schedule';
+import SignUp from '../containers/SignUp';
+import Tools from '../containers/Tools';
 import NotFound from '../containers/NotFound';
+import PrivateRoute from './PrivateRoute';
+import AppContext from '../context/appContext';
+
 
 const AppRouter = () => {
+    const { user } = useContext(AppContext)
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (user === null) {
+            navigate('/SignUp')
+        }else{
+            navigate('/Home')
+        }
+    }, [user])
+
     return (
-        <div>
-            <Router>
-                <Routes>
-                    <Route path="/"         element={<Main />}/>
-                    <Route path="/SignUp"   element={<SignUp />}/>
-                    <Route path="/LogIn"    element={<LogIn />}/>
-                    <Route path="/Home"     element={<Home />} />
-                    <Route path="/Profile"  element={<Profile />} />
-                    <Route path="/Tools"    element={<Tools />} />
-                    <Route path="/Blogs"    element={<Blogs />} />
-                    <Route path="/Schedule" element={<Schedule />} />
-                    <Route path="/AboutUs"  element={<AboutUs />} />
-                    <Route path="*"         element={<NotFound />} />
-                </Routes>
-            </Router>
-        </div>
+        <>
+
+            <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/SignUp" element={<SignUp />} />
+                <Route path="/LogIn" element={<LogIn />} />
+                <Route path="/Home" element={<PrivateRoute><Home /></PrivateRoute>} />
+                <Route path="/Profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
+                <Route path="/Tools" element={<PrivateRoute><Tools /></PrivateRoute>} />
+                <Route path="/Blogs" element={<PrivateRoute><Blogs /></PrivateRoute>} />
+                <Route path="/Schedule" element={<PrivateRoute><Schedule /></PrivateRoute>} />
+                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </>
     )
 }
 

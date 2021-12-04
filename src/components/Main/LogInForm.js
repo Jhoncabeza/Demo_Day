@@ -1,18 +1,23 @@
 const LogInForm = () => {
     return (
         <div className="w-full">
-            <form className="mt-6 ">
-                <div className="flex flex-col items-center md:flex-row ">
-                    <div className="w-48 mb-4 mr-4">
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Email" />
+            <form className="mt-6">
+                <div className="flex flex-col lg:flex-row ">
+                    <div className="w-full mb-4 mr-4 lg:w-48">
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 
+                        text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="email" placeholder="Email" />
                     </div>
                     
-                    <div className="w-48 mb-4 mr-4">
-                        <input className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Contraseña" />
+                    <div className="w-full mb-4 mr-4 lg:w-48">
+                        <input className="shadow appearance-none border rounded w-full py-2 px-3 
+                        text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Contraseña" />
                     </div>
 
-                    <div className="w-auto">
-                        <button className="w-40 bg-sky-300 hover:bg-black-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    <div>
+                        <button className="w-full mb-4 mr-4 bg-sky-300 
+                        hover:bg-black-700 text-white font-bold py-2 px-3
+                        rounded focus:outline-none focus:shadow-outline
+                        lg:w-48" type="button">
                             Iniciar sesión
                         </button>
                     </div>
