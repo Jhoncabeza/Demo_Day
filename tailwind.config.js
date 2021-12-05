@@ -10,7 +10,7 @@ module.exports = {
           '0%, 100%': {
             transform: 'scale(1)'
           },
-          '50%': {
+          '25%': {
             transform: 'scale(2)'
           },
         },
@@ -19,7 +19,7 @@ module.exports = {
             transform: 'scale(0)'
           },
           '50%': {
-            transform: 'scale(0.5)'
+            transform: 'scale(2)'
           },
         },
         beat3: {
@@ -32,8 +32,8 @@ module.exports = {
         }
       },
       animation: {
-        beat1: 'beat1 4s infinite',
-        beat2: 'beat2 7s infinite',
+        beat1: 'beat1 4s 1',
+        beat2: 'beat2 7s 1',
         beat3: 'beat3 8s 1',
       },
     },
