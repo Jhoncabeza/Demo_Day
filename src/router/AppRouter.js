@@ -12,6 +12,10 @@ import Tools from '../containers/Tools';
 import NotFound from '../containers/NotFound';
 import PrivateRoute from './PrivateRoute';
 import AppContext from '../context/appContext';
+import BreathingExercises from '../containers/BreathingExercises';
+import MoodTracker from '../containers/MoodTracker';
+import ToDoList from '../containers/ToDoList';
+import PomodoroTimer from '../containers/PomodoroTimer';
 
 
 const AppRouter = () => {
@@ -37,6 +41,10 @@ const AppRouter = () => {
                 <Route path="/Tools" element={<PrivateRoute><Tools /></PrivateRoute>} />
                 <Route path="/Blogs" element={<PrivateRoute><Blogs /></PrivateRoute>} />
                 <Route path="/Schedule" element={<PrivateRoute><Schedule /></PrivateRoute>} />
+                <Route path="/BreathingExercises" element={<PrivateRoute><BreathingExercises /></PrivateRoute>} />
+                <Route path="/MoodTimer" element={<PrivateRoute><MoodTracker/></PrivateRoute>} />
+                <Route path="/ToDoList" element={<PrivateRoute><ToDoList/></PrivateRoute>} />
+                <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer/></PrivateRoute>} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
@@ -45,3 +53,4 @@ const AppRouter = () => {
 }
 
 export default AppRouter
+

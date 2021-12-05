@@ -4,9 +4,9 @@ import NavBar from '../components/Home/NavBar'
 
 const Home = () => {
     return (
-        <div className="h-100v">
+        <div >
             <div  >
-                <NavBar className="h-10v"/>
+                <NavBar />
             </div>
         </div>
     )
