@@ -5,7 +5,6 @@ import AppContext from "../context/appContext";
 
 const Profile = () => {
     const { user } = useContext(AppContext)
-    console.log(user)
     return (
         <div>
             <div className=" p-2 text-5xl text-gray-600">
@@ -59,13 +58,20 @@ const Profile = () => {
                         </div>
                         <div className="md:col-span-4 h-48 shadow-xl p-4 space-y-2 md:block">
                             <h3 className="font-bold uppercase"> Sobre mi:</h3>
-                            <p>
+                            <p className="text-justify">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                                eget laoreet diam, id luctus lectus. Ut consectetur nisl ipsum,
-                                et faucibus sem finibus vitae. Maecenas aliquam dolor at
-                                dignissim commodo. Etiam a aliquam tellus, et suscipit dolor.
-                                Proin auctor nisi velit, quis aliquet sapien viverra a.
+                                eget laoreet diam, id luctus lectus. 
                             </p>
+                        </div>
+                        <div>
+                        <button className="w-full mb-4 mr-4 bg-sky-300 
+                        hover:bg-sky-400 text-white font-bold py-2 px-3
+                        rounded focus:outline-none focus:shadow-outline
+                        lg:w-48" type="button">Editar Perfil</button>   
+                        <button className="w-full mb-4 mr-4 bg-red-400 
+                        hover:bg-red-500 text-white font-bold py-2 px-3
+                        rounded focus:outline-none focus:shadow-outline
+                        lg:w-48" type="button">Eliminar Cuenta</button>   
                         </div>
                     </div>
                 </div>

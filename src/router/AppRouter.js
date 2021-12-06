@@ -16,6 +16,7 @@ import BreathingExercises from '../containers/BreathingExercises';
 import MoodTracker from '../containers/MoodTracker';
 import ToDoList from '../containers/ToDoList';
 import PomodoroTimer from '../containers/PomodoroTimer';
+import PuntosApoyoPsicologico from '../containers/PuntosApoyoPsicologico';
 
 ;
 const AppRouter = () => {
@@ -46,6 +47,7 @@ const AppRouter = () => {
                 <Route path="/MoodTracker" element={<PrivateRoute><MoodTracker/></PrivateRoute>} />
                 <Route path="/ToDoList" element={<PrivateRoute><ToDoList/></PrivateRoute>} />
                 <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer/></PrivateRoute>} />
+                <Route path="/PuntosApoyoPsicologico" element={<PrivateRoute><PuntosApoyoPsicologico/></PrivateRoute>} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
             </Routes> 

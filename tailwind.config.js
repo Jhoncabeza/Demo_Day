@@ -30,6 +30,8 @@ module.exports = {
       sky: colors.sky,
       red: colors.red,
       green: colors.emerald,
+      yellow: colors.amber,
+      pink: colors.pink,
     },
     height: {
       "10v": "10vh",
@@ -42,6 +44,10 @@ module.exports = {
       "80v": "80vh",
       "90v": "90vh",
       "100v": "100vh",
+      sm: '8px',
+      md: '16px',
+      lg: '24px',
+      xl: '100px',
     }
   },
 

@@ -13,16 +13,16 @@ const NavBar = () => {
       <div className="flex flex-row items-center justify-between px-8 h-18 w-full">
         <div className="text-xl ">
           <Link
-            to="/Tools"
-            className=" mt-4 mt-0 ml-10 text-gray-50 cursor-pointer"
-          >
-            Herramientas
-          </Link>
-          <Link
             to="/Blogs"
             className=" mt-4 mt-0 ml-10 text-gray-50 cursor-pointer"
           >
             Blogs
+          </Link> 
+          <Link
+            to="/Tools"
+            className=" mt-4 mt-0 ml-10 text-gray-50 cursor-pointer"
+          >
+            Herramientas
           </Link>
           <Link
             to="/Schedule"

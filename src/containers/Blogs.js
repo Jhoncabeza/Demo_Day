@@ -32,9 +32,12 @@ const Blogs = () => {
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <a
+              href="https://blog.educalive.com/tecnica-pomodoro/"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
               Leer Artículo
-            </span>
+            </a>
           </div>
         </div>
 
@@ -56,9 +59,12 @@ const Blogs = () => {
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <a
+              href="https://astropediablog.com/mood-tracker-vida-emocional/"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
               Leer Artículo
-            </span>
+            </a>
           </div>
         </div>
 
@@ -80,9 +86,12 @@ const Blogs = () => {
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <a
+              href="https://www.master-malaga.com/empresas/tecnicas-trabajar-en-equipo/"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
               Leer Artículo
-            </span>
+            </a>
           </div>
         </div>
 
@@ -103,9 +112,12 @@ const Blogs = () => {
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <a
+              href="https://www.educaweb.com/contenidos/educativos/tecnicas-estudio/mejores-habitos-estudio-asegurar-exito-academico/"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
               Leer Artículo
-            </span>
+            </a>
           </div>
         </div>
         <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
@@ -122,14 +134,16 @@ const Blogs = () => {
             <p className="text-gray-700 text-base text-justify">
               El estrés puede ser descrito como una situación de sobrecarga o de
               presión que afecta a una persona y que depende tanto de las
-              demandas de la situación, como de los recursos de la persona para
-              afrontarla.
+              demandas de la situación...
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+            <a
+              href="https://cinfasalud.cinfa.com/p/estres/"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
               Leer Artículo
-            </span>
+            </a>
           </div>
         </div>
       </div>

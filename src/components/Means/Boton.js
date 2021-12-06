@@ -29,7 +29,8 @@ const Boton = () => {
     }, [segundos]
     );
 
-    return <div className="w-screen flex items-center justify-center"><div className="rounded-full flex items-center justify-center text-white w-40 h-20v bg-sky-300 animate-beat1">{nombre} {conteo} </div></div>
+    return <div className="w-screen flex items-center justify-center">
+        <div className="rounded-full flex items-center justify-center text-white h-xl w-24 bg-sky-300 animate-beat1">{nombre} {conteo} </div></div>
 
 }
 

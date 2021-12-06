@@ -154,7 +154,7 @@ const Schedule = () => {
                             Número de teléfono
                           </label>
                           <Field
-                            type="number"
+                            type="text"
                             name="phone"
                             id="phone"
                             placeholder="3123456789"

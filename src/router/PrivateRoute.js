@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import SignUp from '../containers/SignUp';
+import Main from '../containers/Main';
 import AppContext from '../context/appContext';
 
  export default function PrivateRoute({ children }) {
@@ -8,5 +8,5 @@ import AppContext from '../context/appContext';
     const isLoggedIn = !!user;
 
     if (isLoggedIn) return children;
-    return <SignUp/>
+    return <Main/>
 }

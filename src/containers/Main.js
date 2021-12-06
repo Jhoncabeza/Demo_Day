@@ -2,9 +2,28 @@ import React from "react";
 import Container from "../components/Home/Container";
 import LogInForm from "../components/Main/LogInForm";
 import NavBarMain from "../components/Main/NavBarMain";
-
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { FacebookAuthProvider } from "firebase/auth";
+import { SiFacebook, SiGmail } from "react-icons/si";
+import { authentication } from "../firebase/firebase";
 
 const Main = () => {
+    const signInWithFacebook = () => {
+        const provider = new FacebookAuthProvider();
+        signInWithPopup(authentication, provider)
+            .catch((err) => {
+                console.log(err.message)
+        })
+    }
+
+    const signInWithGoogle = () => {
+
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(authentication, provider)
+            .catch((err) => {
+                console.log(err)
+            })
+    }
     return (
         <div className="h-full flex flex-col ">
             <div className="">
@@ -19,6 +38,18 @@ const Main = () => {
                     <p className="text-2xl flex items center justify-start text-gray-600
                     lg:w-full  mt-5  ">La mejor herramienta para liberar tu mente </p>
                     <LogInForm />
+                    <h1 className="text-center text-gray-300 font-extrabold mb-4">------------------- O -------------------</h1>
+
+                    <div className="flex flex-row justify-content-between mb-5">
+                        <button onClick={signInWithFacebook} className="flex items-center justify-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 mr-4 rounded " type="button">
+                            <SiFacebook className="mr-2" />Facebook
+                        </button>
+                        <button onClick={signInWithGoogle} className="flex items-center justify-center text-center bg-transparent border border-sky-300 w-36 text-sky-300 font-bold py-2 px-4 rounded" type="button">
+                            <SiGmail className="mr-2" />Gmail
+                        </button>
+
+                    </div>
+
                 </div>
                 <div className="w-screen 
                 lg:w-1/2 ">
