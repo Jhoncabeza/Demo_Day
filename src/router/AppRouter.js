@@ -17,10 +17,11 @@ import MoodTracker from '../containers/MoodTracker';
 import ToDoList from '../containers/ToDoList';
 import PomodoroTimer from '../containers/PomodoroTimer';
 
-
+;
 const AppRouter = () => {
     const { user } = useContext(AppContext)
-    const navigate = useNavigate();
+    const navigate = useNavigate()
+
     useEffect(() => {
         if (user === null) {
             navigate('/')
@@ -42,12 +43,12 @@ const AppRouter = () => {
                 <Route path="/Blogs" element={<PrivateRoute><Blogs /></PrivateRoute>} />
                 <Route path="/Schedule" element={<PrivateRoute><Schedule /></PrivateRoute>} />
                 <Route path="/BreathingExercises" element={<PrivateRoute><BreathingExercises /></PrivateRoute>} />
-                <Route path="/MoodTimer" element={<PrivateRoute><MoodTracker/></PrivateRoute>} />
+                <Route path="/MoodTracker" element={<PrivateRoute><MoodTracker/></PrivateRoute>} />
                 <Route path="/ToDoList" element={<PrivateRoute><ToDoList/></PrivateRoute>} />
                 <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer/></PrivateRoute>} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
-            </Routes>
+            </Routes> 
         </>
     )
 }

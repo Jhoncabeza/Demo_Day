@@ -6,35 +6,17 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        beat1: {
-          '0%, 100%': {
-            transform: 'scale(1)'
-          },
-          '25%': {
-            transform: 'scale(2)'
-          },
-        },
-        beat2: {
-          '0%, 100%': {
-            transform: 'scale(0)'
-          },
-          '50%': {
-            transform: 'scale(2)'
-          },
-        },
-        beat3: {
-          '0%, 100%': {
-            transform: 'scale(0)'
-          },
-          '25%': {
-            transform: 'scale(2)'
-          },
+        beat: {
+          '0%': {
+            transform: 'scale(1)' },
+          '30%, 60%': {
+            transform: 'scale(2)' },
+          '80%, 100%': {
+            transform: 'scale(1)' }
         }
       },
       animation: {
-        beat1: 'beat1 4s 1',
-        beat2: 'beat2 7s 1',
-        beat3: 'beat3 8s 1',
+        beat1: 'beat 18s 1'
       },
     },
     colors: {

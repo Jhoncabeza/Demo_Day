@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.content {
+    background-color: #B983FF;
+    max-width: 100%;
+    border-radius: 20px;
+    align-self: center;
+    padding: 20px;
+}
+
+.primaryImage {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .primaryImage {
+        width: 100%;
+        height: auto;
+    }
+  }

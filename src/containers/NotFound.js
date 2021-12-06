@@ -3,7 +3,7 @@ import React from 'react'
 const NotFound = () => {
     return (
         <div>
-            <div className="h-screen bg-gradient-to-r from-purple-500 flex flex-col items-center justify-center to-sky-300">
+            <div className="h-screen bg-gradient-to-r from-purple-500 to-sky-300 flex flex-col items-center justify-center">
                 <div className="w-9/12 m-auto py-2 flex items-center justify-center">
                     <div className="bg-white overflow-hidden sm:rounded-lg pb-4">
                         <div className="flex flex-col items-center justify-center pt-8">

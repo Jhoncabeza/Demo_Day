@@ -1,0 +1,25 @@
+.searchBar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 320px;
+    max-width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.41);
+}
+
+input::placeholder {
+    color: #A5A5A5;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+input:focus {
+    outline-color: #94DAFF;
+}

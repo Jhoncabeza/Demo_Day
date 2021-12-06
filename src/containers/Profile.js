@@ -10,7 +10,7 @@ const Profile = () => {
         <div>
             <div className=" p-2 text-5xl text-gray-600">
                 <Link to="/Home">
-                    <FaHome />
+                    <FaHome className="text-sky-300 m-4" />
                 </Link>
             </div>
             <div>

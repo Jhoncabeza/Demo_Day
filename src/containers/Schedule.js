@@ -12,7 +12,7 @@ const Schedule = () => {
     <div>
       <div className="p-2 text-5xl text-gray-600">
         <Link to="/Home">
-          <FaHome />
+          <FaHome className="text-sky-300 m-4"/>
         </Link>
         <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
           Agenda tu cita
