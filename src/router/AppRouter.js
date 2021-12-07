@@ -29,6 +29,7 @@ const AppRouter = () => {
         }else{
             navigate('/Home')
         }
+        // eslint-disable-next-line
     }, [user])
 
     return (

@@ -69,9 +69,9 @@ const Schedule = () => {
                       //Validación mensaje
                       if (!valores.message) {
                         errores.message = "Por favor, ingresa un mensaje.";
-                      } else if (!/^[a-zA-Z\s]{1,200}$/.test(valores.message)) {
+                      } else if (!/^[a-zA-Z-ZÀ-ÿ_.,+-¡!¿?\s]{1,200}$/.test(valores.message)) {
                         errores.message =
-                          "El mensaje sólo puede contener letras y espacios.";
+                          "El mensaje sólo puede contener letras, espacios y signos de puntuación.";
                       }
                       return errores;
                     }}

@@ -26,6 +26,7 @@ const Boton = () => {
         } else {
             clearTimeout(timer);
         }
+        // eslint-disable-next-line
     }, [segundos]
     );
 
