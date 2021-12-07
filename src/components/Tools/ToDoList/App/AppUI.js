@@ -7,6 +7,7 @@ import { ToDoList } from "../ToDoList/ToDoList";
 import { ToDoForm } from "../ToDoForm/ToDoForm";
 import { ToDoSearch } from "../ToDoSearch/ToDoSearch";
 import { Modal } from "../Modal/Modal";
+import './App.css'
 
 function AppUI() {
   const {

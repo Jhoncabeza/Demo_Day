@@ -11,7 +11,7 @@ function ToDoForm() {
   };
 
   const onCancel = () => {
-    setOpenModal(false)
+    setOpenModal(false);
   };
 
   const onSubmit = (e) => {
@@ -24,6 +24,7 @@ function ToDoForm() {
     <form onSubmit={onSubmit}>
       <label>Ingresa tu tarea</label>
       <textarea
+        className="textarea"
         value={newTodoValue}
         onChange={onChange}
         placeholder="Reunión a las 3:00 p.m"
@@ -32,7 +33,9 @@ function ToDoForm() {
         <button className="formButton" type="button" onClick={onCancel}>
           Cancelar
         </button>
-        <button className="formButton" type="submit">Añadir</button>
+        <button className="formButton" type="submit">
+          Añadir
+        </button>
       </div>
     </form>
   );

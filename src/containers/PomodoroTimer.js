@@ -8,13 +8,12 @@ const PomodoroTimer = () => {
   
     const [minutes, setMinutes] = useState(25);
     const [seconds, setSeconds] = useState(0);
-  const [displayMessage, setDisplayMessage] = useState(false);
-
+    const [displayMessage, setDisplayMessage] = useState(false);
 
 useEffect(() => {
     let interval = setInterval(() => {
         clearInterval(interval);
-
+        
         if (seconds === 0) {
           if (minutes !== 0){
               setSeconds (59);
@@ -43,14 +42,15 @@ const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
           <BiArrowBack />
         </Link>
       </div>
-      <h3 className="text-center text-5xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">Reloj Pomodoro 
+      <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
+        Reloj Pomodoro 
       </h3>
       <PomodoroPic/>
       <div className="pomodoro">
         <div className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
             {displayMessage && <div>¡Descanso! Nueva sesión comenzará en:</div>}
         </div>
-        <div className="font-bold text-center text-5xl text-gray-700">
+        <div className="font-bold text-5xl text-gray-700 text-center">
             {timerMinutes}:{timerSeconds}</div>
         </div>
     </div>
