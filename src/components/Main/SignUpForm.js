@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { authentication } from "../../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Formik } from "formik";
+import swal from "sweetalert"
 
 const SignUpForm = () => {
   return (
@@ -51,9 +52,9 @@ const SignUpForm = () => {
               values.password
             ).catch((err) => {
               if (err.code === "auth/email-already-in-use")
-                return alert("El Email ingresado ya se encuentra en uso");
+                return swal("El Email ingresado ya se encuentra en uso");
               if (err.code === "auth/invalid-email")
-                return alert("Ingrese un email válido");
+                return swal("Ingrese un email válido");
             });
           }}
         >

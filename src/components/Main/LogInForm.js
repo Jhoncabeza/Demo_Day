@@ -1,6 +1,7 @@
 import { signInWithEmailAndPassword } from "@firebase/auth";
 import { authentication } from "../../firebase/firebase";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import swal from "sweetalert"
 
 const LogInForm = () => {
   return (
@@ -30,11 +31,11 @@ const LogInForm = () => {
             values.password
           ).catch((err) => {
             if (err.code === "auth/invalid-email")
-              return alert("Ingrese un email válido");
+              return swal("Ingrese un email válido");
             else if (err.code === "auth/user-not-found")
-              return alert("El correo electrónico no está registrado");
+              return swal ("El correo electrónico no está registrado");
             else if (err.code === "auth/wrong-password")
-              return alert("Contraseña Incorrecta");
+              return swal("Contraseña Incorrecta");
             console.log(err.code);
           });
         }}
@@ -65,12 +66,12 @@ const LogInForm = () => {
               <ErrorMessage name="password" component="div" />
             </div>
 
-            <div>
+            <div className="lg:w-1/2">
               <button
                 className="w-full mb-4 mr-4 bg-sky-300 
                         hover:bg-black-700 text-white font-bold py-2 px-3
                         rounded focus:outline-none focus:shadow-outline
-                        lg:w-48"
+                        "
                 type="submit"
               >
                 Iniciar sesión

@@ -4,80 +4,91 @@ import { Link } from "react-router-dom";
 import AppContext from "../context/appContext";
 
 const Profile = () => {
-    const { user } = useContext(AppContext)
-    return (
-        <div>
-            <div className=" p-2 text-5xl text-gray-600">
-                <Link to="/Home">
-                    <FaHome className="text-sky-300 m-4" />
-                </Link>
+  const { user } = useContext(AppContext);
+  return (
+    <div className="w-screen">
+      <div className=" p-2 text-5xl text-gray-600">
+        <Link to="/Home">
+          <FaHome className="text-sky-300 m-4" />
+        </Link>
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center rounded-2xl p-4 bg-gray-100 w-4/5 lg:flex justify-center w-1/2">
+          <div className="rounded-l">
+            <img
+              src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1638070162/Panda_mavnoq.png"
+              className="w-40 h-40"
+              alt=""
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="flex flex-row w-auto my-2 justify-center">
+              <span className="text-sm w-32 border bg-sky-300 font-bold border-2 rounded-l px-4 py-2 text-white">
+                Nombre:
+              </span>
+              <input
+                className="text-sm w-full px-4 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1 "
+                type="text"
+                value={user.displayName}
+                readonly
+              />
             </div>
-            <div>
-                <div className="m-8">
-                    <div className="md:grid grid-cols-4 grid-rows-2  bg-white gap-2 p-4 rounded-xl">
-                        <div className="md:col-span-1 h-48 shadow-xl p-2">
-                            <div className="flex w-full h-full relative">
-                                <img
-                                    src={user.photoURL}
-                                    className="w-44 h-44 m-auto"
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                        <div className="md:col-span-3 h-48 shadow-xl p-4 space-y-2 p-3">
-                            <div className="flex">
-                                <span className="text-sm border bg-blue-50 font-bold uppercase border-2 rounded-l px-4 py-2 bg-gray-50 whitespace-no-wrap w-2/6">
-                                    Nombre: 
-                                </span>
-                                <input
-                                    className="px-4 border-l-0 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1 w-4/6"
-                                    type="text" value={user.displayName}
-                                    readonly
-                                />
-                            </div>
-                            <div className="flex ">
-                                <span className="text-sm border bg-blue-50 font-bold uppercase border-2 rounded-l px-4 py-2 bg-gray-50 whitespace-no-wrap w-2/6">
-                                    Correo:
-                                </span>
-                                <input
-                                    className="px-4 border-l-0 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1 w-4/6"
-                                    type="text" value={user.email}
-                                    readonly
-                                />
-                            </div>
-                            {/* <div className="flex ">
-                                <span class="text-sm border bg-blue-50 font-bold uppercase border-2 rounded-l px-4 py-2 bg-gray-50 whitespace-no-wrap w-2/6">
-                                    Fecha de nacimiento:
-                                </span>
-                                <input
-                                    className="px-4 border-l-0 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1 w-4/6"
-                                    type="text" value={user.birthday}
-                                    readonly
-                                />
-                            </div> */}
-                        </div>
-                        <div className="md:col-span-4 h-48 shadow-xl p-4 space-y-2 md:block">
-                            <h3 className="font-bold uppercase"> Sobre mi:</h3>
-                            <p className="text-justify">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                                eget laoreet diam, id luctus lectus. 
-                            </p>
-                        </div>
-                        <div>
-                        <button className="w-full mb-4 mr-4 bg-sky-300 
+
+            <div className="flex flex-row w-auto my-2 justify-center">
+              <span className="text-sm w-32 border bg-sky-300 font-bold border-2 rounded-l px-4 py-2 text-white">
+                Correo:
+              </span>
+              <input
+                className="text-sm w-full px-4 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1"
+                type="text"
+                value={user.email}
+                readonly
+              />
+            </div>
+
+            <div className="flex flex-row w-auto my-2 justify-center">
+              <span className="text-sm w-32 border bg-sky-300 font-bold border-2 rounded-l px-4 py-2 text-white">
+                Sobre mí:
+              </span>
+              <p className="bg-white text-sm w-full px-4 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                eget laoreet diam, id luctus lectus.
+              </p>
+            </div>
+
+            {/* <div className="">
+              <h3 className="font-bold uppercase"> Sobre mi:</h3>
+              <p className="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                eget laoreet diam, id luctus lectus.
+              </p>
+            </div> */}
+
+            <div className="flex flex-col items-center">
+              <button
+                className="w-full my-4 mr-4 bg-sky-300 
                         hover:bg-sky-400 text-white font-bold py-2 px-3
                         rounded focus:outline-none focus:shadow-outline
-                        lg:w-48" type="button">Editar Perfil</button>   
-                        <button className="w-full mb-4 mr-4 bg-red-400 
+                        lg:w-48"
+                type="button"
+              >
+                Editar Perfil
+              </button>
+              <button
+                className="w-full mb-4 mr-4 bg-red-400 
                         hover:bg-red-500 text-white font-bold py-2 px-3
                         rounded focus:outline-none focus:shadow-outline
-                        lg:w-48" type="button">Eliminar Cuenta</button>   
-                        </div>
-                    </div>
-                </div>
+                        lg:w-48"
+                type="button"
+              >
+                Eliminar Cuenta
+              </button>
             </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Profile;
