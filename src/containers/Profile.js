@@ -50,19 +50,13 @@ const Profile = () => {
               <span className="text-sm w-32 border bg-sky-300 font-bold border-2 rounded-l px-4 py-2 text-white">
                 Sobre mí:
               </span>
-              <p className="bg-white text-sm w-full px-4 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget laoreet diam, id luctus lectus.
-              </p>
+              <input
+                className="text-sm w-full px-4 cursor-default border-gray-300 focus:outline-none  rounded-md rounded-l-none shadow-sm -ml-1"
+                type="text"
+                value=""
+                readonly
+              />
             </div>
-
-            {/* <div className="">
-              <h3 className="font-bold uppercase"> Sobre mi:</h3>
-              <p className="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                eget laoreet diam, id luctus lectus.
-              </p>
-            </div> */}
 
             <div className="flex flex-col items-center">
               <button
