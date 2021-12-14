@@ -6,6 +6,7 @@ import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { FacebookAuthProvider } from "firebase/auth";
 import { SiFacebook, SiGmail } from "react-icons/si";
 import { authentication } from "../firebase/firebase";
+import Information from "../components/Main/Information";
 
 const Main = () => {
     const signInWithFacebook = () => {
@@ -26,11 +27,11 @@ const Main = () => {
     }
     return (
         <div className="h-full flex flex-col ">
-            <div className="">
+            <div className="NavBar">
                 <NavBarMain />
             </div>
             <div className="flex flex-col items-center justify-center
-                lg:flex-row ">
+                lg:flex-row">
                 <div className="flex flex-col items-center justify-start w-screen p-2 mx-10 
                 lg:w-1/2" >
                     <h1 className="text-5xl flex items center justify-start font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal 
@@ -58,6 +59,7 @@ const Main = () => {
                 </div>
 
             </div>
+            <Information />
         </div>
     );
 };
