@@ -221,6 +221,7 @@ const Schedule = () => {
         </div>
         <div className="flex items-center justify-center p-5 w-screen md:w-1/2">
           <img
+            className="w-1/2"
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637295408/Mind%20Balance%20App/girl-sitting-on-armchair-with-laptop-by-oblik-studio_vx9kus.png"
             alt="girl in sofa"
           />
