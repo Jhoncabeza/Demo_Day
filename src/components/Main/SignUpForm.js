@@ -1,9 +1,10 @@
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { authentication } from "../../firebase/firebase";
+import { authentication, db } from "../../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Formik } from "formik";
 import swal from "sweetalert"
+import { doc, setDoc } from "firebase/firestore";
 
 const SignUpForm = () => {
   return (
@@ -47,12 +48,23 @@ const SignUpForm = () => {
           }}
           onSubmit={(values) => {
             createUserWithEmailAndPassword(
-              authentication,
-              values.email,
-              values.password
-            ).catch((err) => {
+              authentication,values.email,values.password
+            )
+            
+            .then( async(authentication) => {
+              const data = {
+                id:      authentication.user.uid ,
+                name:    values.name,
+                email:   authentication.user.email,
+                img:     "",
+                aboutMe: ""
+              }
+              const docRef = doc(db,"usuarios",authentication.user.uid);
+              await setDoc(docRef,data)
+            })
+            .catch((err) => {
               if (err.code === "auth/email-already-in-use")
-                return swal("El Email ingresado ya se encuentra en uso");
+                return swal("El email ingresado ya se encuentra en uso");
               if (err.code === "auth/invalid-email")
                 return swal("Ingrese un email válido");
             });

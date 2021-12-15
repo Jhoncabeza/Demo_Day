@@ -18,6 +18,7 @@ import ToDoList from '../containers/ToDoList';
 import PomodoroTimer from '../containers/PomodoroTimer';
 import PuntosApoyoPsicologico from '../containers/PuntosApoyoPsicologico';
 
+
 ;
 const AppRouter = () => {
     const { user } = useContext(AppContext)
@@ -26,7 +27,7 @@ const AppRouter = () => {
     useEffect(() => {
         if (user === null) {
             navigate('/')
-        }else{
+        } else {
             navigate('/Home')
         }
         // eslint-disable-next-line
@@ -45,13 +46,13 @@ const AppRouter = () => {
                 <Route path="/Blogs" element={<PrivateRoute><Blogs /></PrivateRoute>} />
                 <Route path="/Schedule" element={<PrivateRoute><Schedule /></PrivateRoute>} />
                 <Route path="/BreathingExercises" element={<PrivateRoute><BreathingExercises /></PrivateRoute>} />
-                <Route path="/MoodTracker" element={<PrivateRoute><MoodTracker/></PrivateRoute>} />
-                <Route path="/ToDoList" element={<PrivateRoute><ToDoList/></PrivateRoute>} />
-                <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer/></PrivateRoute>} />
-                <Route path="/PuntosApoyoPsicologico" element={<PrivateRoute><PuntosApoyoPsicologico/></PrivateRoute>} />
+                <Route path="/MoodTracker" element={<PrivateRoute><MoodTracker /></PrivateRoute>} />
+                <Route path="/ToDoList" element={<PrivateRoute><ToDoList /></PrivateRoute>} />
+                <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer /></PrivateRoute>} />
+                <Route path="/PuntosApoyoPsicologico" element={<PrivateRoute><PuntosApoyoPsicologico /></PrivateRoute>} />
                 <Route path="/AboutUs" element={<AboutUs />} />
                 <Route path="*" element={<NotFound />} />
-            </Routes> 
+            </Routes>
         </>
     )
 }

@@ -36,35 +36,35 @@ const NavBar = () => {
         <div className={"lg:flex flex-row pt-5" + (navbarOpen ? " flex flex-col w-full " : " hidden")}>
           <Link
             to="/Blogs"
-            className="flex justify-end py-2 px-4 text-gray-50 cursor-pointer "
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
           >
             <AiOutlineBook className=" text-lg mt-1 mr-1" />
             Blogs
           </Link>
           <Link
             to="/Tools"
-            className="flex justify-end py-2 px-4 text-gray-50 cursor-pointer "
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
           >
             <AiOutlineTool className="text-lg mt-1 mr-1" />
             Herramientas
           </Link>
           <Link
             to="/Schedule"
-            className="flex justify-end py-2 px-4 text-gray-50 cursor-pointer "
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
           >
             <AiOutlineSchedule className="text-lg mt-1 mr-1" />
             Agenda tu cita
           </Link>
           <Link
             to="/Profile"
-            className="flex justify-end py-2 px-4 text-gray-50 cursor-pointer "
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
           >
             <AiOutlineUser className="text-lg mt-1 mr-1" />
             Perfil
           </Link>
           <button
             onClick={handleLogOut}
-            className="flex justify-end py-2 px-4 text-gray-50 cursor-pointer "
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
           >
             <AiOutlineLogout className="text-lg mt-1 mr-1" />
             Cerrar sesion
