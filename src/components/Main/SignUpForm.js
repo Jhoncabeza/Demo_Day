@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { authentication, db } from "../../firebase/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Formik } from "formik";
-import swal from "sweetalert"
+import swal from "sweetalert";
 import { doc, setDoc } from "firebase/firestore";
 
 const SignUpForm = () => {
@@ -48,26 +48,27 @@ const SignUpForm = () => {
           }}
           onSubmit={(values) => {
             createUserWithEmailAndPassword(
-              authentication,values.email,values.password
+              authentication,
+              values.email,
+              values.password
             )
-            
-            .then( async(authentication) => {
-              const data = {
-                id:      authentication.user.uid ,
-                name:    values.name,
-                email:   authentication.user.email,
-                img:     "https://res.cloudinary.com/dtkdsolsz/image/upload/v1638070162/Panda_mavnoq.png",
-                aboutMe: ""
-              }
-              const docRef = doc(db,"usuarios",authentication.user.uid);
-              await setDoc(docRef,data)
-            })
-            .catch((err) => {
-              if (err.code === "auth/email-already-in-use")
-                return swal("El email ingresado ya se encuentra en uso");
-              if (err.code === "auth/invalid-email")
-                return swal("Ingrese un email válido");
-            });
+              .then(async (authentication) => {
+                const data = {
+                  id: authentication.user.uid,
+                  name: values.name,
+                  email: authentication.user.email,
+                  img: "https://res.cloudinary.com/dtkdsolsz/image/upload/v1639602688/Mind%20Balance%20App/PandaProfile_aqzxzf.png",
+                  aboutMe: "",
+                };
+                const docRef = doc(db, "usuarios", authentication.user.uid);
+                await setDoc(docRef, data);
+              })
+              .catch((err) => {
+                if (err.code === "auth/email-already-in-use")
+                  return swal("El email ingresado ya se encuentra en uso");
+                if (err.code === "auth/invalid-email")
+                  return swal("Ingrese un email válido");
+              });
           }}
         >
           {({

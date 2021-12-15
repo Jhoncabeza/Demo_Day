@@ -33,7 +33,7 @@ const Profile = () => {
   }, [])
 
   return (
-    <div className="w-screen">
+    <div>
       <div className=" p-2 text-5xl text-gray-600">
         <Link to="/Home">
           <FaHome className="text-sky-300 m-4" />

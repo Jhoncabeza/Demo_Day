@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 const Information = () => {
   return (
@@ -82,9 +83,7 @@ const Information = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-sky-300 text-white font-bold text-center p-4 hover:bg-white hover:text-sky-300">
-        &copy; Todos los derechos reservados.
-      </footer>
+      <Footer />
     </>
   );
 };
