@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Tools = () => {
   return (
-    <div>
+    <div className="mb-10">
       <div className="text-5xl text-gray-600">
         <Link to="/Home">
           <FaHome className="text-sky-300 m-4" />
@@ -60,7 +60,7 @@ const Tools = () => {
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1638823718/Mind%20Balance%20App/maps_hl30nj.png"
             alt=""
           />
-          <Link to="/PuntosApoyoPsicologico">
+          <Link to="/Location">
             <h1 className="text-purple-500 text-xl text-center py-4  ">Puntos de Apoyo Psicológico</h1>
           </Link>
         </div>

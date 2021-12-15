@@ -16,7 +16,7 @@ const Blogs = () => {
       <div className="flex flex-col items-center justify-center lg:flex-row flex-wrap justify-center ">
         <div className="max-w-sm mr-5 mx-5  rounded overflow-hidden shadow-lg">
           <img
-            className="w-full h-30v"
+            className="w-full h-30v object-contain"
             src="https://res.cloudinary.com/dso8ht3px/image/upload/v1638547371/demoday/metodo_pomodoro_mjik2k.jpg"
             alt="Pomodoro clock"
           />
@@ -38,7 +38,7 @@ const Blogs = () => {
             >
               Leer Artículo
             </a>
-            <Link 
+            <Link
               to="/PomodoroTimer"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
             >
@@ -49,7 +49,7 @@ const Blogs = () => {
 
         <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
           <img
-            className="w-full h-30v"
+            className="w-full h-30v object-contain"
             src="https://res.cloudinary.com/dso8ht3px/image/upload/v1638547371/demoday/mood_tracker_vcisue.jpg"
             alt="Mood tracker template"
           />
@@ -71,7 +71,7 @@ const Blogs = () => {
             >
               Leer Artículo
             </a>
-            <Link 
+            <Link
               to="/MoodTracker"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
             >
@@ -82,7 +82,7 @@ const Blogs = () => {
 
         <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
           <img
-            className="w-full h-30v"
+            className="w-full h-30v object-contain"
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271973/Mind%20Balance%20App/pexels-photo-3184360_mnxhjh.jpg"
             alt="Sunset in the mountains"
           />
@@ -104,13 +104,12 @@ const Blogs = () => {
             >
               Leer Artículo
             </a>
-            
           </div>
         </div>
 
         <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
           <img
-            className="w-full h-30v"
+            className="w-full h-30v object-contain"
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271973/Mind%20Balance%20App/pexels-photo-301920_xu1lcq.jpg"
             alt="Study phrase"
           />
@@ -121,7 +120,7 @@ const Blogs = () => {
             <p className="text-gray-700 text-base text-justify">
               La puesta en práctica de buenos hábitos de estudio influye
               positivamente en la consecución del éxito académico de un
-              estudiante{" "}
+              estudiante...
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
@@ -135,7 +134,7 @@ const Blogs = () => {
         </div>
         <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
           <img
-            className="w-full h-30v"
+            className="w-full h-30v object-contain"
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271974/Mind%20Balance%20App/pexels-photo-3755761_qek2kq.jpg"
             alt="Sunset in the mountains"
           />
@@ -156,6 +155,36 @@ const Blogs = () => {
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
             >
               Leer Artículo
+            </a>
+          </div>
+        </div>
+        <div className="max-w-sm mr-5 mx-5 rounded overflow-hidden shadow-lg">
+          <img
+            className="w-full h-30v object-contain"
+            src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271974/Mind%20Balance%20App/pexels-photo-8085935_l9lfnv.jpg"
+            alt="Chica sosteniendo su cabeza estresada"
+          />
+          <div className="px-6 py-4 h-30v">
+            <div className="font-bold text-xl mb-2 text-center">
+              Reconocer, prevenir y afrontar el estrés académico
+            </div>
+            <p className="text-gray-700 text-base text-justify">
+              El estrés es la reacción normal que podemos tener al enfrentarnos
+              a las diversas exigencias acádemicas y puede disminuir nuestro rendimiento...
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2 flex justify-between">
+            <a
+              href="https://www.uchile.cl/portal/presentacion/centro-de-aprendizaje-campus-sur/114600/reconocer-prevenir-y-afrontar-el-estres-academico#:~:text=El%20estr%C3%A9s%20acad%C3%A9mico%20es%20la,conseguir%20nuestras%20metas%20y%20objetivos"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              Leer Artículo
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=vAaRM_wV5W8"
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >
+              Ver video
             </a>
           </div>
         </div>
