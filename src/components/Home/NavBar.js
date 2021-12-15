@@ -34,13 +34,7 @@ const NavBar = () => {
           </button>
         </div>
         <div className={"lg:flex flex-row pt-5" + (navbarOpen ? " flex flex-col w-full " : " hidden")}>
-          <Link
-            to="/Blogs"
-            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
-          >
-            <AiOutlineBook className=" text-lg mt-1 mr-1" />
-            Blogs
-          </Link>
+          
           <Link
             to="/Tools"
             className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
@@ -54,6 +48,13 @@ const NavBar = () => {
           >
             <AiOutlineSchedule className="text-lg mt-1 mr-1" />
             Agenda tu cita
+          </Link>
+          <Link
+            to="/Blogs"
+            className="flex justify-start py-2 px-4 text-gray-50 cursor-pointer "
+          >
+            <AiOutlineBook className=" text-lg mt-1 mr-1" />
+            Blogs
           </Link>
           <Link
             to="/Profile"

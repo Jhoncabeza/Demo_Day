@@ -12,7 +12,7 @@ const AboutUs = () => {
         </Link>
       </div>
       <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
-        Sobre Academia Geek
+        Sobre Nosotros
       </h1>
       <div className="flex flex-col items-center justify-center ">
         <div className="h-90v flex flex-col items-center justify-center md:p-8 grid grid-cols-2">
@@ -26,23 +26,20 @@ const AboutUs = () => {
 
           <div className="md:p-4">
             <p className="text-xl text-justify text-gray-600">
-              Academia Geek es un campo de entrenamiento en Desarrollo Web que
-              se basa en retos reales. Su principal objetivo es lograr la
-              empleabilidad en el menor tiempo posible.
+              Mind Balance, un proyecto que nace desde la empatía: Somos
+              conscientes de los retos que supone la presión académica y la
+              importacia de cuidar la salud mental en todos las etapas de una
+              persona, por ello, construimos una aplicación que permiten desde
+              la auto gestión, un mejor paso por la academia.
             </p>
-            <p className="text-xl text-justify text-gray-600">
-              Como miembro de Academia Geek el estudiante hará parte de un
-              proyecto de desarrollo real, y construirá un portafolio
-              profesional que será muy útil para encontrar empleo. El
-              entrenamiento incluye formación técnica, Design Thinking,
-              preparación para el empleo y habilidades para la vida (Soft
-              Skills).
-            </p>
+            <p className="text-xl text-justify text-gray-600"></p>
 
             <p className="text-xl text-justify text-gray-600">
-              La Academia cuenta con el respaldo de Makaia para el
-              relacionamiento con empresas y apoyo social y Agile Innova en la
-              parte técnica y de entrenamiento.
+              La mejor herramienta para liberar tu mente: Enfocados en asistir a
+              nuestros usuarios en el desarrollo de autodisciplina y la
+              construcción de hábitos saludables, traemos a ellos un conjunto de
+              artículos y herramientas que tienen como propósito mejorar la
+              productividad y ayudar a gestionar el estrés.
             </p>
             <div className="flex flex-row items-center justify-end">
               <a href="https://www.linkedin.com/company/academia-geek-bootcamp/">

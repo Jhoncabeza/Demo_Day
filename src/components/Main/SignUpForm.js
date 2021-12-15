@@ -56,7 +56,7 @@ const SignUpForm = () => {
                 id:      authentication.user.uid ,
                 name:    values.name,
                 email:   authentication.user.email,
-                img:     "",
+                img:     "https://res.cloudinary.com/dtkdsolsz/image/upload/v1638070162/Panda_mavnoq.png",
                 aboutMe: ""
               }
               const docRef = doc(db,"usuarios",authentication.user.uid);
