@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Footer from '../components/Main/Footer';
 
 const Tools = () => {
   return (

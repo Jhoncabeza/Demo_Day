@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import PomodoroPic from "../components/Tools/Pomodoro/PomodoroPic";
+import Footer from '../components/Main/Footer'
 
 const PomodoroTimer = () => {
   const [minutes, setMinutes] = useState(25);
