@@ -2,6 +2,7 @@ import React from "react";
 import { SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import Footer from '../components/Main/Footer'
 
 const AboutUs = () => {
   return (
@@ -29,8 +30,8 @@ const AboutUs = () => {
             <p className="text-xl text-justify text-gray-600">
               Mind Balance, un proyecto que nace desde la empatía: Somos
               conscientes de los retos que supone la presión académica y la
-              importacia de cuidar la salud mental en todos las etapas de una
-              persona, por ello, construimos una aplicación que permiten desde
+              importancia de cuidar la salud mental en todos las etapas de una
+              persona, por ello, construimos una aplicación que permite desde
               la auto gestión, un mejor paso por la academia.
             </p>
             <p className="text-xl text-justify text-gray-600"></p>

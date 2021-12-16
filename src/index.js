@@ -4,13 +4,12 @@ import AppRouter from './router/AppRouter';
 import "./index.css";
 import AppContext from './context/appContext';
 import { BrowserRouter as Router } from "react-router-dom";
-import Footer from './components/Main/Footer';
-
+import Footer from './components/Main/Footer'
 
 ReactDOM.render(
   <AppContext.AppProvider>
     <Router>
-      <AppRouter />
+      <AppRouter className="h-100v"/>
       <Footer />
     </Router>
   </AppContext.AppProvider>,

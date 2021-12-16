@@ -35,7 +35,7 @@ function AppUI() {
           <ToDoSearch />
           <ToDoList>
             {error && (
-              <p className="descriptions">Desésperate, hubo un error</p>
+              <p className="descriptions">Hubo un error</p>
             )}
             {loading && <p className="descriptions">Cargando...</p>}
             {!loading && !searchedTodos.length && (

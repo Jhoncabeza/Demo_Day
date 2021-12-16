@@ -12,7 +12,7 @@ const Schedule = () => {
     <div>
       <div className="p-2 text-5xl text-gray-600">
         <Link to="/Home">
-          <FaHome className="text-sky-300 m-4"/>
+          <FaHome className="text-sky-300 m-4" />
         </Link>
         <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
           Agenda tu cita
@@ -69,7 +69,11 @@ const Schedule = () => {
                       //Validación mensaje
                       if (!valores.message) {
                         errores.message = "Por favor, ingresa un mensaje.";
-                      } else if (!/^[a-zA-Z-ZÀ-ÿ_.,+-¡!¿?\s]{1,200}$/.test(valores.message)) {
+                      } else if (
+                        !/^[a-zA-Z-ZÀ-ÿ_.,+-¡!¿?\s]{1,200}$/.test(
+                          valores.message
+                        )
+                      ) {
                         errores.message =
                           "El mensaje sólo puede contener letras, espacios y signos de puntuación.";
                       }
@@ -78,7 +82,7 @@ const Schedule = () => {
                     onSubmit={(values, { resetForm }) => {
                       emailjs
                         .sendForm(
-                          "service_6zwi6oj",
+                          "service_tusj02j",
                           "template_3i1qjqh",
                           formRef.current,
                           "user_JfkNX3UNYbtsvNT9Ex3LI"
@@ -232,4 +236,3 @@ const Schedule = () => {
 };
 
 export default Schedule;
-

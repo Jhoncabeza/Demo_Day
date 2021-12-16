@@ -18,7 +18,6 @@ import ToDoList from '../containers/ToDoList';
 import PomodoroTimer from '../containers/PomodoroTimer';
 import Location from '../containers/Location';
 
-
 ;
 const AppRouter = () => {
     const { user } = useContext(AppContext)
