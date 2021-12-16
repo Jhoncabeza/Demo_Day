@@ -43,6 +43,7 @@ module.exports = {
       "70v": "70vh",
       "80v": "80vh",
       "90v": "90vh",
+      "94v": "94vh",
       "100v": "100vh",
       sm: '8px',
       md: '16px',

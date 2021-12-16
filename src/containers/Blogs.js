@@ -35,12 +35,15 @@ const Blogs = () => {
             <a
               href="https://blog.educalive.com/tecnica-pomodoro/"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
             <Link
               to="/PomodoroTimer"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              
             >
               Ir a herramienta
             </Link>
@@ -68,6 +71,8 @@ const Blogs = () => {
             <a
               href="https://astropediablog.com/mood-tracker-vida-emocional/"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
@@ -101,6 +106,8 @@ const Blogs = () => {
             <a
               href="https://www.master-malaga.com/empresas/tecnicas-trabajar-en-equipo/"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
@@ -127,6 +134,8 @@ const Blogs = () => {
             <a
               href="https://www.educaweb.com/contenidos/educativos/tecnicas-estudio/mejores-habitos-estudio-asegurar-exito-academico/"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
@@ -153,6 +162,8 @@ const Blogs = () => {
             <a
               href="https://cinfasalud.cinfa.com/p/estres/"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
@@ -177,12 +188,16 @@ const Blogs = () => {
             <a
               href="https://www.uchile.cl/portal/presentacion/centro-de-aprendizaje-campus-sur/114600/reconocer-prevenir-y-afrontar-el-estres-academico#:~:text=El%20estr%C3%A9s%20acad%C3%A9mico%20es%20la,conseguir%20nuestras%20metas%20y%20objetivos"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Leer Artículo
             </a>
             <a
               href="https://www.youtube.com/watch?v=vAaRM_wV5W8"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+              target="_blank"
+              rel='noopener noreferrer'
             >
               Ver video
             </a>

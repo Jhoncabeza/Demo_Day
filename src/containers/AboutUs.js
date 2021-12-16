@@ -5,18 +5,19 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="">
+    <>
       <div className="p-5 text-3xl">
         <Link to="/" className="float-left">
           <BiArrowBack />
         </Link>
-      </div>
-      <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
+        <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
         Sobre Nosotros
       </h1>
-      <div className="flex flex-col items-center justify-center ">
-        <div className="h-90v flex flex-col items-center justify-center md:p-8 grid grid-cols-2">
-          <div className="md:p-4">
+      </div>
+      
+      <div className="flex flex-col items-center justify-center lg:flex-row">
+        <div className="flex flex-col items-center justify-center lg:flex-row w-screen">
+          <div className="p-8 lg:w-1/2">
             <img
               className="object-contain"
               src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1638056481/Mind%20Balance%20App/group_team_aaxbbh.jpg"
@@ -24,7 +25,7 @@ const AboutUs = () => {
             />
           </div>
 
-          <div className="md:p-4">
+          <div className="p-8 lg:w-1/2">
             <p className="text-xl text-justify text-gray-600">
               Mind Balance, un proyecto que nace desde la empatía: Somos
               conscientes de los retos que supone la presión académica y la
@@ -41,7 +42,7 @@ const AboutUs = () => {
               artículos y herramientas que tienen como propósito mejorar la
               productividad y ayudar a gestionar el estrés.
             </p>
-            <div className="flex flex-row items-center justify-end">
+            <div className="flex flex-row items-center justify-end pt-8">
               <a href="https://www.linkedin.com/company/academia-geek-bootcamp/">
                 <SiLinkedin className="mr-6 text-3xl text-gray-600" />
               </a>
@@ -55,7 +56,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

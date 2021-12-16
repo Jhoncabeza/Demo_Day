@@ -33,13 +33,13 @@ const Profile = () => {
   }, [])
 
   return (
-    <div>
+    <div >
       <div className=" p-2 text-5xl text-gray-600">
         <Link to="/Home">
-          <FaHome className="text-sky-300 m-4" />
+          <FaHome className="text-sky-300 m-7"/>
         </Link>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         <div className="flex flex-col items-center rounded-2xl p-4 bg-gray-100 w-4/5 lg:flex justify-center w-1/2">
           <div className="rounded-l">
             <img

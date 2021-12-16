@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 
 const Information = () => {
   return (
@@ -83,7 +82,6 @@ const Information = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

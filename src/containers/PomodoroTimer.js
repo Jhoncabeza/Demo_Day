@@ -69,16 +69,16 @@ const PomodoroTimer = () => {
           </h4>
           <ol className="text-lg px-8 my-8 text-justify">
             <p>
-              <em>✔️Paso 1: </em>Maneja las distracciones y controla tu tiempo.
+              <em>✔️</em>Maneja las distracciones y controla tu tiempo.
             </p>
             <p>
-              <em>✔️Paso 2: </em>Incrementa la responsabilidad.
+              <em>✔️</em>Incrementa la responsabilidad.
             </p>
             <p>
-              <em>✔️Paso 3: </em>Mejora la planificación de tareas.
+              <em>✔️</em>Mejora la planificación de tareas.
             </p>
             <p>
-              <em>✔️Paso 4: </em>Mantiene la motivación.
+              <em>✔️</em>Mantiene la motivación.
             </p>
           </ol>
         </div>

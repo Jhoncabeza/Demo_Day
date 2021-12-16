@@ -176,7 +176,7 @@ const Content = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            allowFullScreen=""
           ></iframe>
           <img
             className="w-3/4 my-8"
@@ -190,7 +190,7 @@ const Content = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            allowFullScreen=""
           ></iframe>
           <iframe
             className="w-3/4 my-8"
@@ -199,7 +199,7 @@ const Content = () => {
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen=""
           ></iframe>
         </div>
       </div>
