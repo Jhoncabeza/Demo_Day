@@ -9,11 +9,14 @@ const PomodoroTimer = () => {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [displayMessage, setDisplayMessage] = useState(false);
+  const [isRunning, setIsRuning] = useState(true);
 
   useEffect(() => {
     let interval = setInterval(() => {
       clearInterval(interval);
-
+      if (!isRunning) {
+        return;
+      }
       if (seconds === 0) {
         if (minutes !== 0) {
           setSeconds(59);
@@ -30,7 +33,8 @@ const PomodoroTimer = () => {
         setSeconds(seconds - 1);
       }
     }, 1000);
-  }, [seconds, minutes, displayMessage]);
+    return () => clearInterval(interval);
+  }, [seconds, minutes, displayMessage, isRunning]);
 
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
@@ -51,6 +55,29 @@ const PomodoroTimer = () => {
         </div>
         <div className="font-bold text-5xl text-gray-700 text-center">
           {timerMinutes}:{timerSeconds}
+        </div>
+        <div className="buttoms flex justify-center gap-4 mt-8" >
+          <button
+            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            onClick={() => setIsRuning(true)}
+          >
+            Iniciar
+          </button>
+          <button
+            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            onClick={() => setIsRuning(false)}
+          >
+            Detener
+          </button>
+          <button
+            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            onClick={() => {
+              setMinutes(25);
+              setSeconds(0);
+            }}
+          >
+            Re-Iniciar
+          </button>
         </div>
       </div>
       <div className="flex my-10">
