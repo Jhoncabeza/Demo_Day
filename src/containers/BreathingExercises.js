@@ -2,7 +2,6 @@ import { useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Boton from "../components/Tools/Boton";
-import Footer from '../components/Main/Footer'
 
 const BreathingExercises = () => {
   const [boton, setBoton] = useState(false);

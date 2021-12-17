@@ -2,7 +2,7 @@ import React from "react";
 import ToolToDoList from "../components/Tools/ToDoList/App/ToolToDoList";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Footer from '../components/Main/Footer'
+
 
 const ToDoList = () => {
   return (

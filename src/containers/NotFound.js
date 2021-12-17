@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/Main/Footer";
+
 
 const NotFound = () => {
   return (

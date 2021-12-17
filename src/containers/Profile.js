@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AppContext from "../context/appContext";
 import { authentication, db } from "../firebase/firebase";
-import Footer from '../components/Main/Footer'
+
 
 const Profile = () => {
   const { user } = useContext(AppContext);

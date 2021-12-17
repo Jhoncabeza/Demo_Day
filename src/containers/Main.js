@@ -8,7 +8,6 @@ import { SiFacebook, SiGmail } from "react-icons/si";
 import { authentication, db } from "../firebase/firebase";
 import Information from "../components/Main/Information";
 import { doc,setDoc } from "firebase/firestore";
-import Footer from '../components/Main/Footer'
 
 const Main = () => {    
 

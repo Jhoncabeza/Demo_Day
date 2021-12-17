@@ -2,7 +2,6 @@ import React from "react";
 import { SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import Footer from '../components/Main/Footer'
 
 const AboutUs = () => {
   return (
