@@ -9,15 +9,15 @@ const Schedule = () => {
   const formRef = useRef();
 
   return (
-    <div>
-      <div className="p-2 text-5xl text-gray-600">
+    <>
+      <div className="p-5 text-5xl">
         <Link to="/Home">
           <FaHome className="text-sky-300 m-4" />
         </Link>
-        <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
-          Agenda tu cita
-        </h1>
       </div>
+      <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
+          Agenda tu cita
+      </h1>
       <div className="flex flex-col md:flex-row">
         <div className="flex items-center justify-center w-screen md:w-1/2">
           <div className="flex items-center ">
@@ -231,7 +231,7 @@ const Schedule = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -11,16 +11,16 @@ const LogInForm = () => {
         validate={(values) => {
           const errors = {};
           if (!values.email) {
-            errors.email = "Campo requerido";
+            errors.email = "Por favor, ingresa un correo.";
           } else if (
             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
           ) {
-            errors.email = "Ingrese un email válido";
+            errors.email = "El correo sólo puede contener letras, números, puntos y guiones.";
           }
           if (!values.password) {
-            errors.password = "Campo requerido";
+            errors.password = "Por favor, ingresa una contraseña";
           } else if (values.password.length < 6) {
-            errors.password = "La contraseña debe ser de almenos 6 caráteres";
+            errors.password = "La contraseña debe tener al menos 6 carácteres";
           }
           return errors;
         }}
@@ -42,7 +42,7 @@ const LogInForm = () => {
       >
         <Form className="mt-6">
           <div className="flex flex-col lg:flex-row ">
-            <div className="w-full mb-4 mr-4 lg:w-48">
+            <div className="w-full mb-4 mr-4 lg:w-1/3">
               <Field
                 className="shadow appearance-none border rounded w-full py-2 px-3 
                         text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -51,10 +51,10 @@ const LogInForm = () => {
                 type="email"
                 placeholder="Email"
               />
-              <ErrorMessage name="email" component="div" />
+              <ErrorMessage className="text-sm text-red-700"  name="email" component="div" />
             </div>
 
-            <div className="w-full mb-4 mr-4 lg:w-48">
+            <div className="w-full mb-4 mr-4 lg:w-1/3">
               <Field
                 className="shadow appearance-none border rounded w-full py-2 px-3 
                         text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -63,10 +63,10 @@ const LogInForm = () => {
                 type="password"
                 placeholder="Contraseña"
               />
-              <ErrorMessage name="password" component="div" />
+              <ErrorMessage className="text-sm text-red-700" name="password" component="div" />
             </div>
 
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/3">
               <button
                 className="w-full mb-4 mr-4 bg-sky-300 
                         hover:bg-black-700 text-white font-bold py-2 px-3

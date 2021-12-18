@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 const Blogs = () => {
   return (
     <div>
-      <div className="p-2 text-5xl text-gray-600">
-        <Link to="/Home">
+      <div className="flex flex-col lg:p-2 text-5xl text-gray-600">
+        <Link to="/Home" className="float-left">
           <FaHome className="text-sky-300 m-4" />
         </Link>
+        <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
+          Artículos
+        </h1>
       </div>
-      <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
-        Artículos
-      </h1>
       <div className="flex flex-col items-center justify-center lg:flex-row flex-wrap justify-center ">
         <div className="max-w-sm mr-5 mx-5  rounded overflow-hidden shadow-lg">
           <img
@@ -43,7 +43,7 @@ const Blogs = () => {
             <Link
               to="/PomodoroTimer"
               className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-              
+
             >
               Ir a herramienta
             </Link>

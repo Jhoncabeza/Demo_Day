@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const ToDoList = () => {
   return (
     <div >
-      <div className="p-5 text-3xl">
-        <Link to="/Tools" className="float-left">
+      <div className="p-5 text-5xl">
+        <Link to="/Tools" className="text-sky-300" >
           <BiArrowBack />
         </Link>
       </div>

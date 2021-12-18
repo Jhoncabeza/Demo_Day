@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { ToDoContext } from "../ToDoContext/ToDoContext";
 import { CreateToDoButton } from "../CreateToDoButton/CreateToDoButton";
 import { ToDoCounter } from "../ToDoCounter/ToDoCounter";
@@ -21,7 +21,7 @@ function AppUI() {
   } = React.useContext(ToDoContext);
 
   return (
-    <Fragment>
+    <>
       <div className="container">
         <div>
           <img
@@ -59,7 +59,7 @@ function AppUI() {
           <CreateToDoButton setOpenModal={setOpenModal} />
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }
 

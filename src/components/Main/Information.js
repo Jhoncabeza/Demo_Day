@@ -17,21 +17,22 @@ const Information = () => {
         <div className="flex flex-col text-center">
           <div className="flex items-center self-start mx-10 w-1/2 justify-center">
             <div>
-              <h4 className="font-bold text-xl">Desarrolla autodisciplina</h4>
+              <h4 className="text-center text-2xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
+                Desarrolla autodisciplina</h4>
               <p className="text-md text-center m-4">
                 Con ayuda de nuestros tips y herramientas lograrás determinación
                 y cumplirás más fácil tus objetivos.
               </p>
             </div>
             <img
-              className="w-1/3"
+              className="hidden lg:flex w-1/3"
               src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637295408/Mind%20Balance%20App/girl-sitting-on-books-with-laptop-by-oblik-studio_mg7wlo.png"
               alt=""
             />
           </div>
           <div className="flex flex-row-reverse self-end items-center mx-10 w-1/2 justify-center">
             <div>
-              <h4 className="font-bold text-xl">
+              <h4 className="text-center text-2xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
                 Construye hábitos saludables
               </h4>
               <p className="text-md text-center m-4">
@@ -40,14 +41,14 @@ const Information = () => {
               </p>
             </div>
             <img
-              className="w-1/3"
+              className="hidden lg:flex w-1/3"
               src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637295408/Mind%20Balance%20App/fruits-glass-of-water-dumbbell-by-oblik-studio_nxm47z.png"
               alt=""
             />
           </div>
           <div className="flex items-center self-start mx-10 w-1/2 justify-center">
             <div>
-              <h4 className="font-bold text-xl">
+              <h4 className="text-center text-2xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
                 Aprende a gestionar mejor tu tiempo
               </h4>
               <p className="text-md text-center m-4">
@@ -57,14 +58,14 @@ const Information = () => {
               </p>
             </div>
             <img
-              className="w-1/3"
+              className="hidden lg:flex w-1/3"
               src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637295409/Mind%20Balance%20App/planning-sheets-of-paper-coffee-by-oblik-studio_ecuv46.png"
               alt=""
             />
           </div>
           <div className="flex flex-row-reverse self-end items-center mx-10 w-1/2 justify-center">
             <div>
-              <h4 className="font-bold text-xl">
+              <h4 className="text-center text-2xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
                 Reconoce, previene y afronta el estrés académico
               </h4>
               <p className="text-md text-center m-4">
@@ -75,7 +76,7 @@ const Information = () => {
               </p>
             </div>
             <img
-              className="w-1/3"
+              className="hidden lg:flex w-1/3"
               src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637295407/Mind%20Balance%20App/books-by-oblik-studio_xmfgoc.png"
               alt=""
             />

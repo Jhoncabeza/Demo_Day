@@ -23,7 +23,7 @@ const Profile = () => {
     setUserInformation(docSnap.data())
   }
 
-  const handleDelete = async() => {
+  const handleDelete = async () => {
     await deleteDoc(doc(db, "usuarios", user.uid));
     authentication.signOut();
   };
@@ -34,18 +34,21 @@ const Profile = () => {
   }, [])
 
   return (
-    <div >
+    <div className="h-auto lg:h-100v">
       <div className=" p-2 text-5xl text-gray-600">
         <Link to="/Home">
-          <FaHome className="text-sky-300 m-7"/>
+          <FaHome className="text-sky-300 m-7" />
         </Link>
       </div>
-      <div className="flex flex-col items-center ">
+      <h1 className="text-5xl lg:text-6xl text-center font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
+        Perfil
+      </h1>
+      <div className="flex flex-col items-center mt-10 mb-10">
         <div className="flex flex-col items-center rounded-2xl p-4 bg-gray-100 w-4/5 lg:flex justify-center w-1/2">
           <div className="rounded-l">
             <img
               src={userInformation.img}
-              className="w-40 h-40"
+              className="w-40 rounded-full mb-4"
               alt="avatar"
             />
           </div>
@@ -58,26 +61,26 @@ const Profile = () => {
             validate={(values) => {
               const errors = {};
               if (!values.email) {
-                errors.email = "Campo requerido";
+                errors.email = "Por favor, ingresa un correo.";
               } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
               ) {
                 errors.email = "Ingrese un email válido";
               }
-            
+
               if (!values.name) {
-                errors.name = "Campo requerido";
+                errors.name = "Por favor, ingresa un nombre.";
               }
-              
+
               if (!values.aboutMe) {
-                errors.aboutMe = "Campo requerido";
+                errors.aboutMe = "Por favor, ingresa una descripción.";
               }
 
               return errors;
             }}
-            onSubmit={(values,{ resetForm }) => {
+            onSubmit={(values, { resetForm }) => {
               async function asyncCall() {
-                await updateDoc(doc(db,"usuarios",user.uid),values)
+                await updateDoc(doc(db, "usuarios", user.uid), values)
               }
               asyncCall();
               resetForm();
@@ -92,8 +95,8 @@ const Profile = () => {
               handleBlur,
               handleSubmit,
             }) => (
-              <form onSubmit={handleSubmit}>
-                <div className="flex flex-col">
+              <form onSubmit={handleSubmit} >
+                <div className="flex flex-col ">
                   <div className="flex flex-row w-auto my-2 justify-center">
                     <span className="text-sm w-32 border bg-sky-300 font-bold border-2 rounded-l px-4 py-2 text-white">
                       Nombre:
@@ -108,6 +111,9 @@ const Profile = () => {
                       onBlur={handleBlur}
                       placeholder={userInformation.name}
                     />
+
+                  </div>
+                  <div className="text-sm text-red-700">
                     {errors.name && touched.name && errors.name}
                   </div>
 
@@ -125,6 +131,8 @@ const Profile = () => {
                       onBlur={handleBlur}
                       placeholder={userInformation.email}
                     />
+                  </div>
+                  <div className="text-sm text-red-700">
                     {errors.email && touched.email && errors.email}
                   </div>
                   <div className="flex flex-row w-auto my-2 justify-center">
@@ -141,22 +149,25 @@ const Profile = () => {
                       onBlur={handleBlur}
                       placeholder={userInformation.aboutMe}
                     />
+                  </div>
+
+                  <div className="text-sm text-red-700">
                     {errors.aboutMe && touched.aboutMe && errors.aboutMe}
                   </div>
 
                   <div className="flex flex-col items-center">
                     <button
-                      className="w-full my-4 mr-4 bg-sky-300 
+                      className="w-full mb-4 mt-4 bg-sky-300 
                         hover:bg-sky-400 text-white font-bold py-2 px-3
                         rounded focus:outline-none focus:shadow-outline
                         lg:w-48"
-                        type="submit"
+                      type="submit"
 
                     >
                       Actualizar datos
                     </button>
                     <button
-                      className="w-full mb-4 mr-4 bg-red-400 
+                      className="w-full  bg-red-400 
                         hover:bg-red-500 text-white font-bold py-2 px-3
                         rounded focus:outline-none focus:shadow-outline
                         lg:w-48"

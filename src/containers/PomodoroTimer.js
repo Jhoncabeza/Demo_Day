@@ -39,14 +39,14 @@ const PomodoroTimer = () => {
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
   return (
     <div>
-      <div className="p-5 text-3xl">
-        <Link to="/Tools" className="float-left">
+      <div className="p-5 text-5xl">
+        <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />
         </Link>
+        <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
+          Reloj Pomodoro
+        </h3>
       </div>
-      <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
-        Reloj Pomodoro
-      </h3>
       <PomodoroPic />
       <div className="pomodoro">
         <div className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
@@ -57,19 +57,19 @@ const PomodoroTimer = () => {
         </div>
         <div className="buttoms flex justify-center gap-4 mt-8" >
           <button
-            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            className="self-center w-32 bg-sky-300 hover:bg-sky-400 text-white font-bold py-2 px-4 rounded-full"
             onClick={() => setIsRuning(true)}
           >
             Iniciar
           </button>
           <button
-            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            className="self-center w-32 bg-sky-300 hover:bg-sky-400 text-white font-bold py-2 px-4 rounded-full"
             onClick={() => setIsRuning(false)}
           >
             Detener
           </button>
           <button
-            className="self-center w-32 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full"
+            className="self-center w-32 bg-sky-300 hover:bg-sky-400 text-white font-bold py-2 px-4 rounded-full"
             onClick={() => {
               setMinutes(25);
               setSeconds(0);
@@ -80,11 +80,11 @@ const PomodoroTimer = () => {
         </div>
       </div>
       <div className="flex my-10">
-        <div className="w-1/2">
+        <div className="w-full">
           <h3 className="text-purple-500 text-2xl text-center font-bold my-8">
             ¿Qué es la técnica del Pomodoro?
           </h3>
-          <p className="text-lg text-justify px-6">
+          <p className="text-lg text-center px-6">
             El método Pomodoro consiste en dividir el trabajo en bloques de
             tiempo enfocados, normalmente 25 minutos, separados por un breve
             descanso de 5 minutos. Después de un bloque de cuatro secciones
@@ -96,24 +96,18 @@ const PomodoroTimer = () => {
           </h4>
           <ol className="text-lg px-8 my-8 text-justify">
             <p>
-              <em>✔️</em>Maneja las distracciones y controla tu tiempo.
+              <em>✔️ </em>Maneja las distracciones y controla tu tiempo.
             </p>
             <p>
-              <em>✔️</em>Incrementa la responsabilidad.
+              <em>✔️ </em>Incrementa la responsabilidad.
             </p>
             <p>
-              <em>✔️</em>Mejora la planificación de tareas.
+              <em>✔️ </em>Mejora la planificación de tareas.
             </p>
             <p>
-              <em>✔️</em>Mantiene la motivación.
+              <em>✔️ </em>Mantiene la motivación.
             </p>
           </ol>
-        </div>
-        <div className="w-1/2">
-          <img
-            src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1639601381/Mind%20Balance%20App/pomodoro_infograf%C3%ADa_nqadj8.jpg"
-            alt=""
-          />
         </div>
       </div>
     </div>

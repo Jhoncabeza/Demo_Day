@@ -9,7 +9,6 @@ import Profile from '../containers/Profile';
 import Schedule from '../containers/Schedule';
 import SignUp from '../containers/SignUp';
 import Tools from '../containers/Tools';
-import NotFound from '../containers/NotFound';
 import PrivateRoute from './PrivateRoute';
 import AppContext from '../context/appContext';
 import BreathingExercises from '../containers/BreathingExercises';
@@ -50,7 +49,6 @@ const AppRouter = () => {
                 <Route path="/PomodoroTimer" element={<PrivateRoute><PomodoroTimer /></PrivateRoute>} />
                 <Route path="/Location" element={<PrivateRoute><Location /></PrivateRoute>} />
                 <Route path="/AboutUs" element={<AboutUs />} />
-                <Route path="*" element={<NotFound />} />
             </Routes>
         </>
     )

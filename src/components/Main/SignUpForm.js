@@ -8,7 +8,7 @@ import { doc, setDoc } from "firebase/firestore";
 
 const SignUpForm = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="p-5 text-3xl">
         <Link to="/" className="float-left">
           <BiArrowBack />
@@ -28,20 +28,20 @@ const SignUpForm = () => {
           validate={(values) => {
             const errors = {};
             if (!values.email) {
-              errors.email = "Campo requerido";
+              errors.email = "Por favor, ingresa un correo.";
             } else if (
               !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
-              errors.email = "Ingrese un email válido";
+              errors.email = "El correo sólo puede contener letras, números, puntos y guiones.";
             }
             if (!values.password) {
-              errors.password = "Campo requerido";
+              errors.password = "Por favor, ingresa una contraseña.";
             } else if (values.password.length < 6) {
-              errors.password = "La contraseña debe ser de almenos 6 caráteres";
+              errors.password = "La contraseña debe tener al menos 6 carácteres";
             }
 
             if (!values.name) {
-              errors.name = "Campo requerido";
+              errors.name = "El nombre sólo puede contener letras y espacios.";
             }
 
             return errors;
@@ -80,14 +80,13 @@ const SignUpForm = () => {
             handleSubmit,
           }) => (
             <form
-              className=" w-full justify-items-center bg-white shadow-xl 
-                rounded px-8 pb-8 mb-4 bg-white-300
-                lg:w-1/2"
+              className="w-full justify-center items-center bg-white shadow-xl 
+                rounded px-8 pb-8 mb-16 bg-white-300
+                lg:w-1/2 mb-32"
               onSubmit={handleSubmit}
             >
               <h1
-                className="text-3xl text-center 
-                    text-sky-300 font-extrabold mb-8 "
+                className="text-center text-3xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8"
               >
                 Crea tu perfil
               </h1>
@@ -102,7 +101,9 @@ const SignUpForm = () => {
                   onBlur={handleBlur}
                   placeholder="Nombre"
                 />
-                {errors.name && touched.name && errors.name}
+                <div className="text-sm text-red-700">
+                { errors.name && touched.name && errors.name}
+                </div>
               </div>
               <div className="mb-4 w-full">
                 <input
@@ -115,7 +116,9 @@ const SignUpForm = () => {
                   onBlur={handleBlur}
                   placeholder="Email"
                 />
+                <div className="text-sm text-red-700">
                 {errors.email && touched.email && errors.email}
+                </div>
               </div>
               <div className="mb-4 w-full">
                 <input
@@ -128,7 +131,9 @@ const SignUpForm = () => {
                   onBlur={handleBlur}
                   placeholder="Contraseña"
                 />
+                <div className="text-sm text-red-700">
                 {errors.password && touched.password && errors.password}
+                </div>              
               </div>
               <div className="flex justify-center mb-6 w-full lg: w-1/3">
                 <button

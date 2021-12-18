@@ -28,21 +28,21 @@ const MoodTracker = () => {
   return (
     <>
       <div className="flex flex-col w-screen">
-        <div className="p-4 text-3xl">
-          <Link to="/Tools" className="float-left">
+        <div className="p-5 text-5xl">
+          <Link to="/Tools" className="text-sky-300 ">
             <BiArrowBack />
           </Link>
-          <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
-            Mood Tracker
-          </h3>
         </div>
+        <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
+          Mood Tracker
+        </h3>
         <div className="w-full">
           <h3 className="text-purple-500 text-2xl text-center font-bold my-8">
             ¿Qué es la técnica del Mood Tracker?
           </h3>
           <p className="text-lg text-justify px-6">
             El Mood Tracker es un diario digital que permite llevar un registro
-            de las emociones ayudando a idenficar situaciones que desencadenan
+            de las emociones ayudando a identificar situaciones que desencadenan
             emociones negativas y así poder desarrollar un mayor
             autoconocimiento y cambiar patrones de conducta.
           </p>
@@ -51,13 +51,13 @@ const MoodTracker = () => {
           </h4>
           <ol className="text-lg px-8 my-8 text-justify">
             <p>
-              <em>✔️</em>Desarrollar autoconocimiento.
+              <em>✔️ </em>Desarrollar autoconocimiento.
             </p>
             <p>
-              <em>✔️</em>Cambiar patrones negativos de conducta.
+              <em>✔️ </em>Cambiar patrones negativos de conducta.
             </p>
             <p>
-              <em>✔️</em>Aprender a identificar y gestionar emociones negativas.
+              <em>✔️ </em>Aprender a identificar y gestionar emociones negativas.
             </p>
           </ol>
           <h4 className="text-purple-500 text-2xl text-center font-bold my-8">
@@ -65,22 +65,22 @@ const MoodTracker = () => {
           </h4>
           <ol className="text-lg px-8 my-8 text-justify">
             <p>
-              <em>✔️</em>Establece tus emociones básicas, nosotros te
+              <em>✔️ </em>Establece tus emociones básicas, nosotros te
               recomendamos: alegría, enfado, indiferencia, miedo, tristeza, y asígnale
               a cada emoción su respectivo color.
-              <div className="flex justify-center items-center my-6">
-                <BsEmojiSmile className="yellow text-yellow-300 text-3xl mx-10" />
-                <BsEmojiAngry className="red text-red-500 text-3xl mx-10" />
-                <BsEmojiNeutral className="green text-green-700 text-3xl mx-10" />
-                <BsEmojiDizzy className="sky text-purple-500 text-3xl mx-10" />
-                <BsEmojiFrown className="sky text-sky-500 text-3xl mx-10" />
+              <div className="flex flex-wrap w-full h-10v justify-center items-center lg:flex flex-row justify-center items-center">
+                <BsEmojiSmile className="mx-2 lg:yellow text-yellow-300 text-3xl " />
+                <BsEmojiAngry className="mx-2 lg:red text-red-500 text-3xl " />
+                <BsEmojiNeutral className="mx-2 lg:green text-green-700 text-3xl " />
+                <BsEmojiDizzy className="mx-2 lg:sky text-purple-500 text-3xl " />
+                <BsEmojiFrown className="mx-2 lg:sky text-sky-500 text-3xl " />
               </div>
             </p>
             <p>
-              <em>✔️</em>Escoge tu plantilla favorita para cada mes.
+              <em>✔️ </em>Escoge tu plantilla favorita para cada mes.
             </p>
             <p>
-              <em>✔️</em>Registra la emoción que predominó en cada día en tu
+              <em>✔️ </em>Registra la emoción que predominó en cada día en tu
               plantilla.
             </p>
           </ol>

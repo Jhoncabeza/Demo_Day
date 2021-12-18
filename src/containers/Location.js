@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const Location = () => {
   return (
-    <div>
-      <div className="p-5 text-3xl">
-        <Link to="/Tools" className="float-left">
+    <div className="h-100v">
+      <div className="p-5 text-5xl">
+        <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />
         </Link>
-        <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
+      </div>
+      <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal mb-8">
           Puntos de Apoyo Psicológico
         </h3>
-      </div>
       <div className="flex flex-col items-center justify-center">
         <iframe
           className="my-4"

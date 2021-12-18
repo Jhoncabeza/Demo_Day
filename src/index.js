@@ -9,8 +9,8 @@ import Footer from './components/Main/Footer'
 ReactDOM.render(
   <AppContext.AppProvider>
     <Router>
-      <AppRouter className="h-100v"/>
-      <Footer />
+      <AppRouter/>
+      <Footer/>
     </Router>
   </AppContext.AppProvider>,
   document.getElementById('root')
