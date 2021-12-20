@@ -10,7 +10,7 @@ const BreathingExercises = () => {
     setBoton(!boton);
   };
   return (
-    <div className="flex flex-col justify center ">
+    <div className="flex flex-col justify center">
       <div className="p-5 text-5xl">
         <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />

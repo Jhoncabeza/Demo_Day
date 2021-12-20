@@ -34,7 +34,7 @@ const Profile = () => {
   }, [])
 
   return (
-    <div className="h-auto lg:h-100v">
+    <div className="lg:h-150v xl:h-110v 2xl:h-110v">
       <div className=" p-2 text-5xl text-gray-600">
         <Link to="/Home">
           <FaHome className="text-sky-300 m-7" />

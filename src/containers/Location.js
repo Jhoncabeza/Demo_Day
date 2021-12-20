@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Location = () => {
   return (
-    <div className="h-100v">
+    <div className="w-screen lg:h-170v">
       <div className="p-5 text-5xl">
         <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />
@@ -15,15 +15,13 @@ const Location = () => {
         </h3>
       <div className="flex flex-col items-center justify-center">
         <iframe
-          className="my-4"
+          className="my-4 h-100v w-3/4"
           title="map1"
           src="https://www.google.com/maps/d/u/0/embed?mid=1iJXEzF7jKAy-bS2YQw0F9Dr5r79_PPJp&ehbc=2E312F"
-          width="640"
-          height="480"
           frameBorder="0"
           allowFullScreen=""
         ></iframe>
-        <p className="m-10 text-center">
+        <p className="m-10 text-center lg:mx-20">
           El programa de Escuchaderos es una iniciativa de la alcaldía de
           Medellín cuyo fin es ofrecer atención y orientación psicológica de
           forma gratuita a los habitantes de las diferentes comunas y

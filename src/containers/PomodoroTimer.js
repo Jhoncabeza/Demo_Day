@@ -38,7 +38,7 @@ const PomodoroTimer = () => {
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
   return (
-    <div>
+    <div className="lg:h-200v xl:h-140v 2xl:h-140v">
       <div className="p-5 text-5xl">
         <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />

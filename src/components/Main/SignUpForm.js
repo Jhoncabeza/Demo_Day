@@ -8,9 +8,9 @@ import { doc, setDoc } from "firebase/firestore";
 
 const SignUpForm = () => {
   return (
-    <div className="flex flex-col ">
-      <div className="p-5 text-3xl">
-        <Link to="/" className="float-left">
+    <div className="lg:h-170v xl:h-180v 2xl:h-190v ">
+      <div className="p-5 text-5xl">
+        <Link to="/" className="text-sky-300">
           <BiArrowBack />
         </Link>
       </div>
