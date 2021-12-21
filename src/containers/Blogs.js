@@ -10,7 +10,7 @@ const Blogs = () => {
           <FaHome className="text-sky-300 m-4" />
         </Link>
         <h1 className="text-center text-6xl font-bold bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text leading-normal">
-          Artículos
+          Artículos 
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center lg:flex-row flex-wrap justify-center ">
@@ -20,7 +20,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dso8ht3px/image/upload/v1638547371/demoday/metodo_pomodoro_mjik2k.jpg"
             alt="Pomodoro clock"
           />
-          <div className="px-6 py-4 h-60v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               ¿Qué es el método Pomodoro y para qué sirve?
             </div>
@@ -56,7 +56,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dso8ht3px/image/upload/v1638547371/demoday/mood_tracker_vcisue.jpg"
             alt="Mood tracker template"
           />
-          <div className="px-6 py-4 h-50v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               Los beneficios de llevar tu propio <em>mood tracker</em>
             </div>
@@ -91,7 +91,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271973/Mind%20Balance%20App/pexels-photo-3184360_mnxhjh.jpg"
             alt="Sunset in the mountains"
           />
-          <div className="px-6 py-4 h-50v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               Las mejores técnicas para trabajar en equipo
             </div>
@@ -120,7 +120,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271973/Mind%20Balance%20App/pexels-photo-301920_xu1lcq.jpg"
             alt="Study phrase"
           />
-          <div className="px-6 py-4 h-50v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               Los mejores hábitos de estudio
             </div>
@@ -147,7 +147,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271974/Mind%20Balance%20App/pexels-photo-3755761_qek2kq.jpg"
             alt="Sunset in the mountains"
           />
-          <div className="px-6 py-4 h-50v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               ¿Cómo manejar el estrés y la ansiedad causados por la presión
               académica?
@@ -175,7 +175,7 @@ const Blogs = () => {
             src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1637271974/Mind%20Balance%20App/pexels-photo-8085935_l9lfnv.jpg"
             alt="Chica sosteniendo su cabeza estresada"
           />
-          <div className="px-6 py-4 h-50v lg:h-50v xl:h-30v">
+          <div className="px-6 py-4 h-40v lg:h-30v xl:h-30v">
             <div className="font-bold text-xl mb-2 text-center">
               Reconocer, prevenir y afrontar el estrés académico
             </div>

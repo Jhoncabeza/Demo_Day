@@ -153,7 +153,7 @@ const Content = () => {
               Películas recomendadas:
             </h2>
             <img
-              src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1640047220/Mind%20Balance%20App/Sin_t%C3%ADtulo_ibmtct.png"
+              src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1640052402/Mind%20Balance%20App/Sin_t%C3%ADtulo_ibmtct.png"
               alt=""
             />
           </div>

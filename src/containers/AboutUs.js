@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="lg:h-180v xl:h-140v 2xl:h-140v">
+    <div className="lg:h-180v xl:h-140v 2xl:h-100v">
       <div className="p-5 text-5xl">
         <Link to="/" className="text-sky-300">
           <BiArrowBack />
@@ -31,7 +31,7 @@ const AboutUs = () => {
             <div className="flex flex-row items-center justify-center pt-8 mt-10">
               <div className=" text-center font-bold bg-gradient-to-r from-purple-500 
               to-sky-300 text-transparent bg-clip-text leading-normal ">
-                <img className="w-40 rounded-full mb-4" src="https://res.cloudinary.com/dso8ht3px/image/upload/v1639768321/demoday/Jhon_pdl3g6.jpg" alt="Jhon" />
+                <img className="w-40 md:w-80 rounded-full mb-4" src="https://res.cloudinary.com/dso8ht3px/image/upload/v1639768321/demoday/Jhon_pdl3g6.jpg" alt="Jhon" />
                 <div className="text-xs md:text-xl">
                   <h1>Jhon Cabeza</h1>
                   <h1>Tech Lead</h1>
@@ -41,7 +41,7 @@ const AboutUs = () => {
 
               <div className="text-center font-bold bg-gradient-to-r from-purple-500 
               to-sky-300 text-transparent bg-clip-text leading-normal mx-10 ">
-                <img className="w-40 rounded-full mb-4" src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1639865864/Mind%20Balance%20App/d1752567-adbf-4761-81f7-13ef4a7cb470_qlgu9r.jpg" alt="Alejandra" />
+                <img className="w-40 md:w-80 rounded-full mb-4" src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1639865864/Mind%20Balance%20App/d1752567-adbf-4761-81f7-13ef4a7cb470_qlgu9r.jpg" alt="Alejandra" />
                 <div className="text-xs md:text-xl">
                   <h1>Alejandra Sánchez</h1>
                   <h1 >Creative Director</h1>
@@ -51,7 +51,7 @@ const AboutUs = () => {
 
               <div className="text-center font-bold bg-gradient-to-r from-purple-500 
               to-sky-300 text-transparent bg-clip-text leading-normal ">
-                <img className="w-40 rounded-full mb-4" src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1639765371/Mind%20Balance%20App/5b998f7f-230e-4246-829a-612a24ce5bb3_ronypo.jpg" alt="Daniela" />
+                <img className="w-40 md:w-80 rounded-full mb-4" src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1639765371/Mind%20Balance%20App/5b998f7f-230e-4246-829a-612a24ce5bb3_ronypo.jpg" alt="Daniela" />
                 <div className="text-xs md:text-xl">
                   <h1>Daniela Rivera</h1>
                   <h1>Scrum Master</h1>
