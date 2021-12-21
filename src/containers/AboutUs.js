@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
-    <div className="lg:h-180v xl:h-110v 2xl:h-100v">
+    <div className="lg:h-180v xl:h-140v 2xl:h-140v">
       <div className="p-5 text-5xl">
         <Link to="/" className="text-sky-300">
           <BiArrowBack />

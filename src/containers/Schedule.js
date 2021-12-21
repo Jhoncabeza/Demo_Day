@@ -9,7 +9,7 @@ const Schedule = () => {
   const formRef = useRef();
 
   return (
-    <div className="md:h-180v lg:h-180v xl:h-120v 2xl:h-120v">
+    <div className="md:h-190v lg:h-180v xl:h-180v 2xl:h-180v">
       <div className="p-5 text-5xl">
         <Link to="/Home">
           <FaHome className="text-sky-300 m-4" />
