@@ -38,7 +38,7 @@ const PomodoroTimer = () => {
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
   return (
-    <div className="lg:h-200v xl:h-140v 2xl:h-140v">
+    <div className="lg:h-200v xl:h-180v 2xl:h-140v">
       <div className="p-5 text-5xl">
         <Link to="/Tools" className="text-sky-300">
           <BiArrowBack />
@@ -87,7 +87,7 @@ const PomodoroTimer = () => {
           <p className="text-lg text-center px-6">
             El método Pomodoro consiste en dividir el trabajo en bloques de
             tiempo enfocados, normalmente 25 minutos, separados por un breve
-            descanso de 5 minutos. Después de un bloque de cuatro secciones
+            descanso de 10 minutos. Después de un bloque de cuatro secciones
             seguidas, se toma un descanso más largo, generalmente de 20 o 30
             minutos.
           </p>
